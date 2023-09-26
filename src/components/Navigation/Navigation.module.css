@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    gap: 15px;
+    padding-left: 10vw;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 700;
+    color: beige;
+}
+
+.link.active,
+.link:hover {
+    color: #e84a5f;
+    transition-duration: 250ms;
+}
