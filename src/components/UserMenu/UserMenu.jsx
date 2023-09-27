@@ -1,7 +1,7 @@
-import { useDispatch } from 'react-redux';
-import { logOut } from '../../redux/auth/operations';
-import { useAuth } from '../../hooks/useAuth';
-import css from './UserMenu.module.css';
+import { useDispatch } from "react-redux";
+import { logOut } from "../../redux/auth/operations";
+import { useAuth } from "../../hooks/useAuth";
+import css from "./UserMenu.module.css";
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -13,12 +13,12 @@ export const UserMenu = () => {
       <button
         className={css.btn}
         type="button"
-        title="Click to log out"
+        title="Log out"
         onClick={() => dispatch(logOut())}
       >
         <img
           className={css.icon}
-          src={'assets/logoutIconRed.png'}
+          src={"assets/logoutIconRed.png"}
           alt="Log out"
         />
       </button>

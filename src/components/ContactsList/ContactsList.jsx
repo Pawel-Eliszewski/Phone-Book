@@ -47,7 +47,7 @@ export const ContactsList = () => {
                 </li>
                 <button
                   className={css.btn}
-                  title="Click to delete contact"
+                  title="Delete contact"
                   onClick={() => handleDelete(contact.id)}
                 >
                   <img

@@ -1,11 +1,11 @@
-import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/operations';
-import css from './RegisterForm.module.css';
+import { useDispatch } from "react-redux";
+import { register } from "../../redux/auth/operations";
+import css from "./RegisterForm.module.css";
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.currentTarget;
     dispatch(
@@ -23,11 +23,23 @@ export const RegisterForm = () => {
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={css.label} htmlFor="name">
           Username
-          <input className={css.input} id="name" required type="text" name="name" />
+          <input
+            className={css.input}
+            id="name"
+            required
+            type="text"
+            name="name"
+          />
         </label>
         <label className={css.label} htmlFor="email">
           Email
-          <input className={css.input} required id="email" type="email" name="email" />
+          <input
+            className={css.input}
+            required
+            id="email"
+            type="email"
+            name="email"
+          />
         </label>
         <label className={css.label} htmlFor="password">
           Password
@@ -39,10 +51,10 @@ export const RegisterForm = () => {
             required
           />
         </label>
-        <button className={css.btn} type="submit" title="Click to register">
+        <button className={css.btn} type="submit" title="Register">
           <img
             className={css.icon}
-            src={'assets/userIconRed.png'}
+            src={"assets/userIconRed.png"}
             alt="Register user"
           />
         </button>
