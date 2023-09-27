@@ -22,13 +22,15 @@
   max-width: fit-content;
   height: 60px;
   justify-content: space-between;
+  align-items: center;
+  transition-duration: 200ms;
 }
 
 .wrapper:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: 1px solid gray;
-  transition-duration: 250ms;
+  transition-duration: 200ms;
 }
 
 .name {
@@ -49,6 +51,8 @@
 }
 
 .btn {
+  width: 36px;
+  height: 36px;
   border: none;
   cursor: pointer;
   background: transparent;
